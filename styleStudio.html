@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style | Studio</title>
+
+    <!-- daisyUi cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="">
+      <nav class="bg-emerald-200">
+        <div
+          class="top_nav py-4 mx-10 text-black flex justify-between border-b-2 border-green-950"
+        >
+          <div class="location flex gap-7 items-center">
+            <p>+01345667-56677</p>
+            <a href="">Our Location</a>
+          </div>
+          <div class="top_nav_text">
+            <p>Super Value Deals - Save more with coupons</p>
+          </div>
+          <div class="login_link">
+            <a href="">Sign up</a>
+          </div>
+        </div>
+      </nav>
+      <navbar>
+        <div
+          class="main_nav max-w-6xl mx-auto flex justify-between mt-10 items-center"
+        >
+          <h1 class="text-2xl text-black font-bold font-mono">
+            <span class="text-emerald-800 text-3xl">Style</span> Studio
+          </h1>
+          <div class="link_item text-black font-medium">
+            <a class="px-3 hover:text-emerald-800 hover:text-xl" href=""
+              >Home</a
+            >
+            <a class="hover:text-emerald-800 hover:text-xl" href="#shop"
+              >Shop</a
+            >
+            <a class="px-3 hover:text-emerald-800 hover:text-xl" href=""
+              >My Account</a
+            >
+            <a class="pr-3 hover:text-emerald-800 hover:text-xl" href=""
+              >Compare</a
+            >
+            <a class="hover:text-emerald-800 hover:text-xl" href="">Log in</a>
+          </div>
+          <div class="search_input text-black relative">
+            <input
+              class="bg-white px-4 py-2 w-60"
+              type="text"
+              placeholder="Search for items"
+            />
+            <i
+              class="fas fa-search absolute text-2xl right-24 top-1 cursor-pointer"
+            ></i>
+            <i class="fa-regular fa-heart px-3 text-2xl cursor-pointer"></i>
+            <i
+              onclick="openCart()"
+              class="fa-solid fa-cart-shopping text-2xl cursor-pointer"
+              ><span id="cart_count" class="text-lg absolute top-0 ml-1"
+                >0</span
+              ></i
+            >
+          </div>
+        </div>
+      </navbar>
+      <div class="home_page max-w-6xl mx-auto flex justify-between mt-10">
+        <div class="home_info">
+          <p class="text-black">Hot promotions</p>
+          <h2 class="text-black text-4xl -tracking-wider font-bold py-2">
+            Fashion Trending
+          </h2>
+          <h1 class="text-emerald-700 text-5xl font-bold tracking-wider">
+            Great Collection
+          </h1>
+          <!-- <p class="text-black py-3">Save more with coupons & up to 20% off</p> -->
+          <marquee class="text-black py-3" behavior="" direction="right"
+            >Save more with coupons & up to 20% off</marquee
+          >
+          <a
+            class="hover:bg-emerald-700 hover:text-white px-3 py-2 text-xl bg-white text-black border-2 border-emerald-800"
+            href=""
+            >Shop Now</a
+          >
+        </div>
+        <div class="image">
+          <img
+            class="h-80"
+            src="images/banner/istockphoto-470883268-612x612.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <main id="shop">
+      <!-- popular categories -->
+      <section class="max-w-6xl mx-auto mt-10">
+        <h2 class="text-black font-bold text-2xl">
+          <span class="text-emerald-700"> Popular</span> Categories
+        </h2>
+        <div class="categories_container grid grid-cols-5 my-4">
+          <a
+            class="cate_sec text-black shadow-xl w-40 px-3 py-2 text-center"
+            href="#shirt"
+            ><img class="w-36 h-36" src="images/shirt/one.jpg" alt="" />
+            <h2 class="font-bold py-2 hover:text-emerald-800">Shirt</h2></a
+          >
+          <a
+            class="cate_sec text-black shadow-xl w-40 px-3 py-2 text-center"
+            href="#panjabi"
+            ><img class="w-36 h-36" src="images/panjabi/seven.jpg" alt="" />
+            <h2 class="font-bold py-2 hover:text-emerald-800">Panjabi</h2></a
+          >
+          <a
+            class="cate_sec text-black shadow-xl w-40 px-3 py-2 text-center"
+            href="#abeya"
+            ><img class="w-36 h-36" src="images/abeya/abeya-4.webp" alt="" />
+            <h2 class="font-bold py-2 hover:text-emerald-800">Abeya</h2></a
+          >
+          <a
+            class="cate_sec text-black shadow-xl w-40 px-3 py-2 text-center"
+            href="#hijab"
+            ><img class="w-36 h-36" src="images/hijab/hijab-2.webp" alt="" />
+            <h2 class="font-bold py-2 hover:text-emerald-800">Hijab</h2></a
+          >
+          <a
+            class="cate_sec text-black shadow-xl w-40 px-3 py-2 text-center"
+            href="#niqab"
+            ><img class="w-36 h-36" src="images/niqab/niqab-1.webp" alt="" />
+            <h2 class="font-bold py-2 hover:text-emerald-800">Niqab</h2></a
+          >
+        </div>
+      </section>
+      <!-- products -->
+      <section class="max-w-6xl mx-auto mt-10">
+        <a
+          class="bg-emerald-800 text-white active:bg-yellow-300 active:text-emerald-800 px-5 py-2 text-lg"
+          href=""
+          >Featured</a
+        >
+        <a
+          class="bg-emerald-800 text-white active:bg-yellow-300 active:text-emerald-800 px-5 py-2 text-lg"
+          href=""
+          >Popular</a
+        >
+        <a
+          class="bg-emerald-800 text-white active:bg-yellow-300 active:text-emerald-800 px-5 py-2 text-lg"
+          href=""
+          >New Added</a
+        >
+        <div class="product"></div>
+      </section>
+      <!-- shirt collections -->
+      <section id="shirt" class="max-w-6xl mx-auto mt-10">
+        <marquee
+          behavior="alternate"
+          direction="right"
+          class="text-black font-bold text-2xl"
+          ><span class="text-emerald-700"> Shirt</span> Collection</marquee
+        >
+        <!-- <h2 class="text-black font-bold text-2xl">
+          <span class="text-emerald-700"> Shirt</span> Collection
+        </h2> -->
+        <div
+          id="shirtsContainer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3"
+        ></div>
+      </section>
+      <!-- panjabi collections -->
+      <section id="panjabi" class="max-w-6xl mx-auto mt-10">
+        <marquee
+          behavior="alternate"
+          direction="left"
+          class="text-black font-bold text-2xl"
+          ><span class="text-emerald-700"> Panjabi</span> Collection</marquee
+        >
+        <div
+          id="panjabisContainer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3"
+        ></div>
+      </section>
+      <!-- abeya collections -->
+      <section id="abeya" class="max-w-6xl mx-auto mt-10">
+        <marquee
+          behavior="alternate"
+          direction="right"
+          class="text-black font-bold text-2xl"
+          ><span class="text-emerald-700"> Abeya</span> Collection</marquee
+        >
+        <div
+          id="abeyaContainer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3"
+        ></div>
+      </section>
+      <!-- niqab collections -->
+      <section id="niqab" class="max-w-6xl mx-auto mt-10">
+        <marquee
+          behavior="alternate"
+          direction="left"
+          class="text-black font-bold text-2xl"
+          ><span class="text-emerald-700"> Niqab</span> Collection</marquee
+        >
+        <div
+          id="niqabContainer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3"
+        ></div>
+      </section>
+      <!-- hijab collections -->
+      <section id="hijab" class="max-w-6xl mx-auto mt-10">
+        <marquee
+          behavior="alternate"
+          direction="right"
+          class="text-black font-bold text-2xl"
+          ><span class="text-emerald-700"> Hijab</span> Collection</marquee
+        >
+        <div
+          id="hijabContainer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3"
+        ></div>
+      </section>
+      <!-- shopping cart -->
+      <div
+        id="shopping_cart"
+        class="cart fixed top-16 right-7 w-[40%] bg-emerald-800 text-white hidden overflow-y-auto"
+      >
+        <div
+          class="flex justify-between px-2 py-2 border-b-2 border-yellow-900 my-4"
+        >
+          <h2 class="font-bold text-3xl">Shopping Cart</h2>
+          <i
+            onclick="closeCart()"
+            class="fa-solid fa-xmark text-2xl hover:text-rose-800 cursor-pointer"
+          ></i>
+        </div>
+        <div
+          id="cart_item"
+          class="gap-2 border-b-2 border-y-sky-900 py-2 items-center justify-around"
+        ></div>
+        <div class="buy_sec flex justify-around py-4 items-center">
+          <button
+            class="hover:bg-emerald-700 hover:text-white px-3 py-2 text-xl bg-white text-black border-2 border-emerald-800"
+          >
+            Buy Now
+          </button>
+          <h2 class="text-xl">Total: <span id="total_price">0</span> taka</h2>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="styleStudio.js"></script>
+  </body>
+</html>
